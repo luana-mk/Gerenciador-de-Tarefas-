@@ -1,5 +1,14 @@
-<?php
-header("Location: login.php");
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema</title>
+</head>
+<body>
 
-echo "Projeto funfando";
-?>
+<h1>Gerenciador de Tarefas</h1>
+
+<a href="cadastro.php">Criar conta</a><br>
+<a href="login.php">Login</a>
+
+</body>
+</html>
