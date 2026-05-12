@@ -17,7 +17,7 @@ if (mysqli_num_rows($resultado) > 0){
         $_SESSION['usuario_id'] = $usuario['id'];
         $_SESSION['usuario_nome'] = $usuario['nome']; #cria sessao do usuario 
 
-        header("Location: ../dashboard.php"); #redireciona para o dashboard
+        header("Location: /projeto/dashboard.php"); #redireciona para o dashboard
         exit;
   
     } else {

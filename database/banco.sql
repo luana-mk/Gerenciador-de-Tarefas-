@@ -7,13 +7,14 @@ CREATE TABLE usuarios (
 
 CREATE TABLE tarefas (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    titulo VARCHAR(255),
+    titulo VARCHAR(255) NOT NULL,
     descricao TEXT,
     data_limite DATE,
-    status ENUM('pendente', 'andamento', 'concluida') DEFAULT 'pendente', 
+    status ENUM('pendente', 'andamento', 'concluida') DEFAULT 'pendente', -- ENUM limita os valores do texto, so permite (pendente, andamento, concluida)
+    -- DEFAUT quando nao informa o status ela inicia como pendente
 
-    usuario_id INT, -- responsavel pela tarefa
-    criado_por INT, -- quem criou a tarefa
+    usuario_id INT NOT NULL, -- responsavel pela tarefa
+    criado_por INT NOT NULL, -- quem criou a tarefa
 
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- quando foi criado
 

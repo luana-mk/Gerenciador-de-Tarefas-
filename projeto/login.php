@@ -6,7 +6,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="usuarios/autenticar.php" method="POST">
+    <form action="/usuarios/autenticar.php" method="POST">
         <label>Email:</label>
         <input type="email" name="email" required>
         <br></br>

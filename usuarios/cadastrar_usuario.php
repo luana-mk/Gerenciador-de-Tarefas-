@@ -14,7 +14,7 @@ $sql = "INSERT INTO usuarios (nome, email, senha)
 VALUES ('$nome', '$email', '$senha')";
 
 if (mysqli_query($conexao, $sql)) {
-    header("Location: ../login.php");
+    header('Location: /projeto/login.php');
     exit;
 } else {
     echo "Erro: " . mysqli_error($conexao);

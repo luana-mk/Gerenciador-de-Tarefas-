@@ -7,8 +7,8 @@
 
 <h1>Gerenciador de Tarefas</h1>
 
-<a href="cadastro.php">Criar conta</a><br>
-<a href="login.php">Login</a>
+<a href="/projeto/cadastro.php">Criar conta</a><br>
+<a href="/projeto/login.php">Login</a>
 
 </body>
 </html>

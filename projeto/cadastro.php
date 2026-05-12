@@ -8,7 +8,7 @@
 
 <h2>Criar conta</h2>
 
-<form action="usuarios/cadastrar_usuario.php" method="POST">
+<form action="/usuarios/cadastrar_usuario.php" method="POST">
 
     <label>Nome:</label>
     <input type="text" name="nome" required>
